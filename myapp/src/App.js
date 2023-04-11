@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('https://harishvanmamserver.onrender.com')
+    axios.get('https://harishvanmamserver.onrender.com/api/greeting')
       .then(response => setMessage(response.data.message))
       .catch(error => console.error(error));
   }, []);
