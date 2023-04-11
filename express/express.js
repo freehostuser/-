@@ -3,7 +3,6 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors());
-
 app.get('/api/greeting', (req, res) => {
   res.json({ message: 'Vanmam from Express!' });
   console.log("RUNNING .....");
