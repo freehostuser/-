@@ -1,20 +1,54 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+"use strict"; 
 import './App.css';
 
 function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    axios.get('https://harishvanmamserver.onrender.com/api/greeting')
-      .then(response => setMessage(response.data.message))
-      .catch(error => console.error(error));
-  }, []);
-
   return (
     <div className="App">
-
-      <h1>SERVER    :     {message}</h1>
+      <div className="box">
+        <div className="image">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image2">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image2">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image2">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image2">
+        </div>
+      </div>
+      
+      <div className="box">
+        <div className="image">
+        </div>
+      </div>
+      
     </div>
   );
 }
